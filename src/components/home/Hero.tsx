@@ -7,14 +7,14 @@ const Hero = () => {
       {/* Floral Pattern Overlays */}
       <div className="absolute top-0 left-0 w-96 h-96 opacity-20">
         <img
-          src="/src/assets/floral-left.svg"
+          src="/assets/floral-left.svg"
           alt=""
           className="w-full h-full object-contain"
         />
       </div>
       <div className="absolute top-0 right-0 w-96 h-96 opacity-20">
         <img
-          src="/src/assets/floral-right.svg"
+          src="/assets/floral-right.svg"
           alt=""
           className="w-full h-full object-contain"
         />
@@ -131,14 +131,14 @@ const Hero = () => {
                 <div className="absolute inset-0 opacity-30">
                   <div className="absolute top-0 left-0 w-48 h-48 rotate-180 transform">
                     <img
-                      src="/src/assets/floral-left.svg"
+                      src="/assets/floral-left.svg"
                       alt=""
                       className="w-full h-full object-contain opacity-60"
                     />
                   </div>
                   <div className="absolute top-0 right-0 w-48 h-48 -rotate-180 transform">
                     <img
-                      src="/src/assets/floral-right.svg"
+                      src="/assets/floral-right.svg"
                       alt=""
                       className="w-full h-full object-contain opacity-60"
                     />
@@ -151,7 +151,7 @@ const Hero = () => {
                     initial={{ scale: 0.95, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.6 }}
-                    src="/src/assets/Chetnas.jpg"
+                    src="/assets/Chetnas.jpg"
                     alt="Chetna's Logo"
                     className="w-full h-full object-contain rounded-lg shadow-2xl transform hover:scale-102 transition-transform duration-300"
                   />

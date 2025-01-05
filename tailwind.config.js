@@ -22,7 +22,7 @@ export default {
         },
       },
       backgroundImage: {
-        "floral-pattern": "url('/src/assets/floral-pattern.svg')",
+        "floral-pattern": "url('/assets/floral-pattern.svg')",
       },
       fontFamily: {
         serif: ["Playfair Display", "serif"],

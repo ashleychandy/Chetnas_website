@@ -34,14 +34,14 @@ const About = () => {
       {/* Floral Pattern Overlays */}
       <div className="absolute top-0 left-0 w-96 h-96 opacity-20">
         <img
-          src="/src/assets/floral-left.svg"
+          src="/assets/floral-left.svg"
           alt=""
           className="w-full h-full object-contain"
         />
       </div>
       <div className="absolute top-0 right-0 w-96 h-96 opacity-20">
         <img
-          src="/src/assets/floral-right.svg"
+          src="/assets/floral-right.svg"
           alt=""
           className="w-full h-full object-contain"
         />
@@ -97,7 +97,7 @@ const About = () => {
             <div className="absolute -inset-px bg-gradient-to-b from-white/5 to-transparent rounded-2xl blur-sm"></div>
             <div className="relative rounded-2xl overflow-hidden">
               <img
-                src="/src/assets/Chetnas.jpg"
+                src="/assets/Chetnas.jpg"
                 alt="Chetna's Store"
                 className="w-full h-full object-cover"
               />

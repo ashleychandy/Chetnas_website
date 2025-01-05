@@ -14,14 +14,14 @@ const Footer: React.FC = () => {
       {/* Floral Pattern Overlays */}
       <div className="absolute bottom-0 left-0 w-96 h-96 opacity-10 rotate-180">
         <img
-          src="/src/assets/floral-left.svg"
+          src="/assets/floral-left.svg"
           alt=""
           className="w-full h-full object-contain"
         />
       </div>
       <div className="absolute bottom-0 right-0 w-96 h-96 opacity-10 rotate-180">
         <img
-          src="/src/assets/floral-right.svg"
+          src="/assets/floral-right.svg"
           alt=""
           className="w-full h-full object-contain"
         />
