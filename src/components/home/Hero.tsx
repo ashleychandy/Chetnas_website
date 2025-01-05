@@ -4,26 +4,73 @@ import { Phone, WhatsApp, LocationOn } from "@mui/icons-material";
 const Hero = () => {
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
-      {/* Floral Pattern Overlays */}
-      <div className="absolute top-0 left-0 w-96 h-96 opacity-20">
+      {/* Main Background Floral Pattern Overlays */}
+      {/* Top Row */}
+      <div className="absolute -top-20 -left-20 w-[35rem] h-[35rem] opacity-[0.15]">
         <img
           src="/assets/floral-left.svg"
           alt=""
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain brightness-200"
         />
       </div>
-      <div className="absolute top-0 right-0 w-96 h-96 opacity-20">
+      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[35rem] h-[35rem] opacity-[0.15]">
         <img
           src="/assets/floral-right.svg"
           alt=""
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain brightness-200"
+        />
+      </div>
+      <div className="absolute -top-20 -right-20 w-[35rem] h-[35rem] opacity-[0.15]">
+        <img
+          src="/assets/floral-right.svg"
+          alt=""
+          className="w-full h-full object-contain brightness-200"
+        />
+      </div>
+
+      {/* Middle Row */}
+      <div className="absolute top-1/2 -translate-y-1/2 -left-20 w-[35rem] h-[35rem] opacity-[0.15]">
+        <img
+          src="/assets/floral-left.svg"
+          alt=""
+          className="w-full h-full object-contain brightness-200"
+        />
+      </div>
+      <div className="absolute top-1/2 -translate-y-1/2 -right-20 w-[35rem] h-[35rem] opacity-[0.15]">
+        <img
+          src="/assets/floral-right.svg"
+          alt=""
+          className="w-full h-full object-contain brightness-200"
+        />
+      </div>
+
+      {/* Bottom Row */}
+      <div className="absolute -bottom-20 -left-20 w-[35rem] h-[35rem] opacity-[0.15] rotate-180">
+        <img
+          src="/assets/floral-left.svg"
+          alt=""
+          className="w-full h-full object-contain brightness-200"
+        />
+      </div>
+      <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[35rem] h-[35rem] opacity-[0.15] rotate-180">
+        <img
+          src="/assets/floral-left.svg"
+          alt=""
+          className="w-full h-full object-contain brightness-200"
+        />
+      </div>
+      <div className="absolute -bottom-20 -right-20 w-[35rem] h-[35rem] opacity-[0.15] rotate-180">
+        <img
+          src="/assets/floral-right.svg"
+          alt=""
+          className="w-full h-full object-contain brightness-200"
         />
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60 z-10"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 z-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <motion.div
@@ -128,19 +175,33 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/50 to-black"></div>
 
                 {/* Floral Patterns */}
-                <div className="absolute inset-0 opacity-30">
-                  <div className="absolute top-0 left-0 w-48 h-48 rotate-180 transform">
+                <div className="absolute inset-0">
+                  <div className="absolute -top-12 -left-12 w-64 h-64 rotate-180 transform opacity-[0.15]">
                     <img
                       src="/assets/floral-left.svg"
                       alt=""
-                      className="w-full h-full object-contain opacity-60"
+                      className="w-full h-full object-contain brightness-200"
                     />
                   </div>
-                  <div className="absolute top-0 right-0 w-48 h-48 -rotate-180 transform">
+                  <div className="absolute -top-12 -right-12 w-64 h-64 -rotate-180 transform opacity-[0.15]">
                     <img
                       src="/assets/floral-right.svg"
                       alt=""
-                      className="w-full h-full object-contain opacity-60"
+                      className="w-full h-full object-contain brightness-200"
+                    />
+                  </div>
+                  <div className="absolute -bottom-12 -left-12 w-64 h-64 transform opacity-[0.15]">
+                    <img
+                      src="/assets/floral-left.svg"
+                      alt=""
+                      className="w-full h-full object-contain brightness-200"
+                    />
+                  </div>
+                  <div className="absolute -bottom-12 -right-12 w-64 h-64 transform opacity-[0.15]">
+                    <img
+                      src="/assets/floral-right.svg"
+                      alt=""
+                      className="w-full h-full object-contain brightness-200"
                     />
                   </div>
                 </div>
