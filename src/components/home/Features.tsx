@@ -48,67 +48,37 @@ const Features = () => {
   };
 
   return (
-    <div className="relative py-16 sm:py-24 lg:py-32 bg-black overflow-hidden">
+    <div className="relative py-12 sm:py-16 lg:py-24 bg-black overflow-hidden">
       {/* Main Background Floral Pattern Overlays */}
-      {/* Top Row */}
-      <div className="absolute -top-10 sm:-top-20 -left-10 sm:-left-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      {/* Top Floral */}
+      <div className="absolute -top-4 -left-12 sm:-left-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-left.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
-      <div className="absolute -top-10 sm:-top-20 left-1/2 -translate-x-1/2 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute -top-4 -right-12 sm:-right-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-right.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-      <div className="absolute -top-10 sm:-top-20 -right-10 sm:-right-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
-        <img
-          src="/assets/floral-right.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
 
-      {/* Middle Row */}
-      <div className="absolute top-1/2 -translate-y-1/2 -left-10 sm:-left-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      {/* Bottom Floral */}
+      <div className="absolute -bottom-4 -left-12 sm:-left-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-left.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
-      <div className="absolute top-1/2 -translate-y-1/2 -right-10 sm:-right-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute -bottom-4 -right-12 sm:-right-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-right.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-
-      {/* Bottom Row */}
-      <div className="absolute -bottom-10 sm:-bottom-20 -left-10 sm:-left-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15] rotate-180">
-        <img
-          src="/assets/floral-left.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-      <div className="absolute -bottom-10 sm:-bottom-20 left-1/2 -translate-x-1/2 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15] rotate-180">
-        <img
-          src="/assets/floral-left.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-      <div className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15] rotate-180">
-        <img
-          src="/assets/floral-right.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
 
@@ -120,15 +90,15 @@ const Features = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-3 sm:space-y-4"
+          className="text-center space-y-3 sm:space-y-4 px-4 sm:px-0"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-white">
             Why Choose{" "}
             <span className="italic">
               Chetna<span className="text-red-600">'</span>s
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto">
             Experience the perfect blend of style, quality, and value
           </p>
         </motion.div>
@@ -137,7 +107,7 @@ const Features = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="mt-12 sm:mt-16 lg:mt-24 grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4 px-4 sm:px-0"
         >
           {features.map((feature) => (
             <motion.div
@@ -146,13 +116,13 @@ const Features = () => {
               className="relative group"
             >
               <div className="absolute -inset-px bg-gradient-to-b from-white/5 to-transparent rounded-2xl blur-sm"></div>
-              <div className="relative h-full p-6 sm:p-8 rounded-2xl bg-black border border-white/10 hover:border-white/20 transition-colors duration-300">
-                <div className="space-y-4 sm:space-y-6">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-white/5 to-transparent p-2 sm:p-3 flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+              <div className="relative h-full p-5 sm:p-6 lg:p-8 rounded-2xl bg-black border border-white/10 hover:border-white/20 transition-colors duration-300">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl bg-gradient-to-br from-white/5 to-transparent p-2 flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                     {feature.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-red-600 transition-colors duration-300">
+                    <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 group-hover:text-red-600 transition-colors duration-300">
                       {feature.title}
                     </h3>
                     <p className="text-sm sm:text-base text-gray-400 leading-relaxed">

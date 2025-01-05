@@ -12,14 +12,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="relative bg-black text-white overflow-hidden">
       {/* Floral Pattern Overlays */}
-      <div className="absolute bottom-0 left-0 w-64 sm:w-96 h-64 sm:h-96 opacity-10 rotate-180">
+      <div className="absolute bottom-0 left-0 w-56 sm:w-80 h-56 sm:h-80 opacity-10 rotate-180">
         <img
           src="/assets/floral-left.svg"
           alt=""
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="absolute bottom-0 right-0 w-64 sm:w-96 h-64 sm:h-96 opacity-10 rotate-180">
+      <div className="absolute bottom-0 right-0 w-56 sm:w-80 h-56 sm:h-80 opacity-10 rotate-180">
         <img
           src="/assets/floral-right.svg"
           alt=""

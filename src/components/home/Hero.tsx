@@ -3,74 +3,51 @@ import { Phone, WhatsApp, LocationOn } from "@mui/icons-material";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden">
+    <div className="relative min-h-[90vh] sm:min-h-screen bg-black overflow-hidden">
       {/* Main Background Floral Pattern Overlays */}
       {/* Top Row */}
-      <div className="absolute -top-10 sm:-top-20 -left-10 sm:-left-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute -top-12 sm:-top-16 -left-12 sm:-left-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-left.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
-      <div className="absolute -top-10 sm:-top-20 left-1/2 -translate-x-1/2 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-right.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
-      <div className="absolute -top-10 sm:-top-20 -right-10 sm:-right-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute -top-12 sm:-top-16 -right-12 sm:-right-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-right.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
 
       {/* Middle Row */}
-      <div className="absolute top-1/2 -translate-y-1/2 -left-10 sm:-left-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute top-1/2 -translate-y-1/2 -left-12 sm:-left-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-left.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
-      <div className="absolute top-1/2 -translate-y-1/2 -right-10 sm:-right-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15]">
+      <div className="absolute top-1/2 -translate-y-1/2 -right-12 sm:-right-16 w-[16rem] sm:w-[28rem] h-[16rem] sm:h-[28rem] opacity-[0.2] sm:opacity-[0.15]">
         <img
           src="/assets/floral-right.svg"
           alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-
-      {/* Bottom Row */}
-      <div className="absolute -bottom-10 sm:-bottom-20 -left-10 sm:-left-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15] rotate-180">
-        <img
-          src="/assets/floral-left.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-      <div className="absolute -bottom-10 sm:-bottom-20 left-1/2 -translate-x-1/2 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15] rotate-180">
-        <img
-          src="/assets/floral-left.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
-        />
-      </div>
-      <div className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-[20rem] sm:w-[35rem] h-[20rem] sm:h-[35rem] opacity-[0.15] rotate-180">
-        <img
-          src="/assets/floral-right.svg"
-          alt=""
-          className="w-full h-full object-contain brightness-200"
+          className="w-full h-full object-contain brightness-[250] sm:brightness-200"
         />
       </div>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60 z-10"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-32 pb-12 sm:pb-16 z-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-32 pb-12 sm:pb-16 z-20">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-16 items-center">
           {/* Left Content */}
           <motion.div
@@ -84,7 +61,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-base sm:text-lg font-medium tracking-wider text-red-600 uppercase"
+                className="text-base sm:text-lg font-medium tracking-wider text-red-600 uppercase px-4 sm:px-0"
               >
                 Premium Wholesale Kurtis
               </motion.h2>
@@ -92,7 +69,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif text-white px-4 sm:px-0"
               >
                 Welcome to{" "}
                 <span className="block mt-2 italic bg-gradient-to-r from-white via-white to-white/90 bg-clip-text text-transparent">
@@ -105,7 +82,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+              className="text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed px-4 sm:px-0"
             >
               Visit our store in Mumbai for the finest collection of designer
               kurtis at wholesale prices. Direct factory outlet with exclusive
@@ -118,29 +95,29 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex flex-col gap-3 sm:gap-4 justify-center lg:justify-start max-w-md mx-auto lg:mx-0"
             >
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex flex-col gap-3 sm:gap-4">
                 <a
                   href="tel:+919833977850"
-                  className="flex-1 inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium rounded-full bg-gradient-to-r from-white to-gray-100 text-black hover:from-gray-100 hover:to-white transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 text-base font-medium rounded-xl bg-white/90 text-black hover:bg-white transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95 backdrop-blur-sm"
                 >
-                  <Phone className="mr-2" /> Call Now
+                  <Phone className="mr-2.5 w-5 h-5" /> Call Now
                 </a>
                 <a
                   href="https://wa.me/919833977850"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium rounded-full bg-gradient-to-r from-green-600 to-green-500 text-white hover:from-green-500 hover:to-green-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 text-base font-medium rounded-xl bg-gradient-to-r from-green-600 to-green-500 text-white hover:from-green-500 hover:to-green-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95 border border-green-400/20"
                 >
-                  <WhatsApp className="mr-2" /> WhatsApp
+                  <WhatsApp className="mr-2.5 w-5 h-5" /> WhatsApp
                 </a>
               </div>
               <a
                 href="https://maps.app.goo.gl/z4fs4ba6zg6r3LXcA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium rounded-full bg-gradient-to-r from-gray-100 to-white text-black hover:from-white hover:to-gray-100 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl backdrop-blur-sm"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 text-base font-medium rounded-xl bg-gradient-to-r from-gray-50 to-white text-black hover:from-white hover:to-gray-50 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl backdrop-blur-sm active:scale-95 border border-white/20"
               >
-                <LocationOn className="mr-2" /> Get Directions
+                <LocationOn className="mr-2.5 w-5 h-5" /> Get Directions
               </a>
             </motion.div>
 
@@ -176,28 +153,28 @@ const Hero = () => {
 
                 {/* Floral Patterns */}
                 <div className="absolute inset-0">
-                  <div className="absolute -top-8 sm:-top-12 -left-8 sm:-left-12 w-48 sm:w-64 h-48 sm:h-64 rotate-180 transform opacity-[0.15]">
+                  <div className="absolute -top-8 sm:-top-12 -left-8 sm:-left-12 w-40 sm:w-56 h-40 sm:h-56 rotate-180 transform opacity-[0.15]">
                     <img
                       src="/assets/floral-left.svg"
                       alt=""
                       className="w-full h-full object-contain brightness-200"
                     />
                   </div>
-                  <div className="absolute -top-8 sm:-top-12 -right-8 sm:-right-12 w-48 sm:w-64 h-48 sm:h-64 -rotate-180 transform opacity-[0.15]">
+                  <div className="absolute -top-8 sm:-top-12 -right-8 sm:-right-12 w-40 sm:w-56 h-40 sm:h-56 -rotate-180 transform opacity-[0.15]">
                     <img
                       src="/assets/floral-right.svg"
                       alt=""
                       className="w-full h-full object-contain brightness-200"
                     />
                   </div>
-                  <div className="absolute -bottom-8 sm:-bottom-12 -left-8 sm:-left-12 w-48 sm:w-64 h-48 sm:h-64 transform opacity-[0.15]">
+                  <div className="absolute -bottom-8 sm:-bottom-12 -left-8 sm:-left-12 w-40 sm:w-56 h-40 sm:h-56 transform opacity-[0.15]">
                     <img
                       src="/assets/floral-left.svg"
                       alt=""
                       className="w-full h-full object-contain brightness-200"
                     />
                   </div>
-                  <div className="absolute -bottom-8 sm:-bottom-12 -right-8 sm:-right-12 w-48 sm:w-64 h-48 sm:h-64 transform opacity-[0.15]">
+                  <div className="absolute -bottom-8 sm:-bottom-12 -right-8 sm:-right-12 w-40 sm:w-56 h-40 sm:h-56 transform opacity-[0.15]">
                     <img
                       src="/assets/floral-right.svg"
                       alt=""
@@ -207,7 +184,7 @@ const Hero = () => {
                 </div>
 
                 {/* Logo */}
-                <div className="relative p-6 sm:p-12">
+                <div className="relative p-4 sm:p-6 lg:p-12">
                   <motion.img
                     initial={{ scale: 0.95, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
