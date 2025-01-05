@@ -140,10 +140,12 @@ const Footer: React.FC = () => {
               <li className="text-sm sm:text-base text-gray-400">
                 <span className="text-white">Monday - Saturday</span>
                 <br />
-                10:00 AM - 8:00 PM
+                11:00 AM - 9:30 PM
               </li>
-              <li className="text-sm sm:text-base text-red-600">
-                Sunday: Closed
+              <li className="text-sm sm:text-base text-gray-400">
+                <span className="text-white">Sunday</span>
+                <br />
+                5:00 PM - 9:30 PM
               </li>
             </ul>
           </div>
