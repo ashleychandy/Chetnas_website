@@ -1,8 +1,8 @@
 {
-  "name": "chetnas",
+  "name": "chetnas-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chetnas2025.github.io/chetnas",
+  "homepage": "https://ashleychandy.github.io/Chetnas_website",
   "type": "module",
   "scripts": {
     "dev": "vite",
